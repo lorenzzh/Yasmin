@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const button = document.getElementById("loveButton");
+    const button = document.getElementById("showMessage");
     const message = document.getElementById("message");
 
     if (button && message) {

@@ -44,6 +44,7 @@ body {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1), 0 4px 30px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 500px;
+    animation: float 5s linear infinite;
     position: relative; /* Asegura que los elementos estén bien posicionados */
     z-index: 1;  /* Asegura que el contenedor no tape el botón */
 }

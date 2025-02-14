@@ -1,36 +1,69 @@
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #ffdde1;
-    color: #d6336c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f8c8dc, #f4a9c7);
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    color: #333;
 }
 
 .container {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1), 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    transition: all 0.3s ease;
 }
 
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.5rem;
+    color: #d6336c;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #e91e63;
+}
+
+/* Botón */
 button {
     background-color: #ff4081;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
     cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
 }
 
 button:hover {
     background-color: #e91e63;
+    transform: translateY(-5px);
 }
 
-.hidden {
-    display: none;
+button:active {
+    transform: translateY(2px);
 }
+
+/* Mensaje oculto */
+#message {
+    margin-top: 20px;
+    padding: 20px;
+    back

@@ -1,6 +1,24 @@
 /* Estilos generales */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    animation: backgroundChange 10s infinite alternate; 
+}
+@keyframes backgroundChange {
+    0% { background-color: #ffebf3; } 
+    25% { background-color: #ffcccb; } 
+    50% { background-color: #ff99cc; } 
+    75% { background-color: #ff69b4; } 
+    100% { background-color: #ff1493; }
+}
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: url('https://gerardoez.github.io/San_Valentin/assets/img/fondo.jpg') no-repeat center center fixed; 
     background-size: cover;
     margin: 0;
@@ -8,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: #333;
+    color: #333;*/
 }
 .hearts-container {
     position: fixed;

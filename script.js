@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (button && message) {
         button.addEventListener("click", function () {
             message.classList.add("show");
-            message.innerHTML = "¡Te amo mucho! ❤️";
+            message.innerHTML = " Eres una persona increíble y especial mi Yasmin. ¡Feliz día, te amo mucho!❤️";
         });
     } else {
         console.error("Error: No se encontró el botón o el mensaje en el HTML.");

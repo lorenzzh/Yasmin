@@ -1,7 +1,8 @@
 /* Estilos generales */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #f8c8dc, #f4a9c7);
+    background: url('https://gerardoez.github.io/San_Valentin/assets/img/fondo.jpg') no-repeat center center fixed; 
+    background-size: cover;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -11,19 +12,15 @@ body {
 }
 
 .container {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.9);  /* Fondo blanco semi-transparente */
     border-radius: 20px;
     padding: 30px;
     text-align: center;
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1), 0 4px 30px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 500px;
-    transition: all 0.3s ease;
-}
-
-.container:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 5px 40px rgba(0, 0, 0, 0.1);
+    position: relative; /* Asegura que los elementos estén bien posicionados */
+    z-index: 1;  /* Asegura que el contenedor no tape el botón */
 }
 
 /* Títulos */
@@ -51,6 +48,8 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin-top: 20px;
+    position: relative;  /* Asegura que el botón sea clickeable */
+    z-index: 10;  /* El botón debe estar encima de cualquier capa del contenedor */
 }
 
 button:hover {
